@@ -1,0 +1,255 @@
+/*-------------------------GENERAL-------------------------*/
+:root {
+    --clr-dark: #0f0c0b;
+    --clr-light: #f1f5f9;
+}
+
+*{
+    line-height: calc(1em + .5rem);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--clr-dark);
+    color: #f1f5f9;
+}
+
+.container{
+    height: 100vh;
+    margin-bottom: 100px;
+    margin-inline: 5rem;
+}
+
+
+header h1{
+    font-size: 90px;
+    padding: 0;
+    margin: 0;
+    margin-left: 4rem;
+
+
+}
+/*-------------------------HEADER-------------------------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f0c0b;
+    /*background-color: #2c2321;*/
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header_list{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    margin: 0 1rem;
+}
+
+header li{
+    border: 1px solid cornflowerblue;
+    border-radius: 20px;
+    padding: .5rem;
+
+}
+
+
+
+
+
+
+li a{
+    color:lightblue;
+    text-decoration: none;
+    font-size:20px;
+
+}
+
+li a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+li a:active{
+    color: lightgreen;
+}
+/*-------------------------ABOUT-------------------------*/
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 98px;
+}
+
+.about-title{
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 80px;
+    text-decoration:underline cornflowerblue;
+    margin-right: 30rem;
+
+}
+.about-text {
+    font-size: 2rem;
+    max-width: 50ch;
+    margin-left: 30rem;
+}
+
+
+
+.sub1, .sub2, .sub3{
+    font-family: "Courier New";
+    font-size:40px;
+    color: cornflowerblue;
+
+}
+/*-------------------------SOCCER-------------------------*/
+
+img.soccer-img{
+    width:800px;
+    height: auto;
+}
+.soccer-ronaldo{
+    width: 300px;
+    height: auto;
+    position: relative;
+    bottom: 5rem;
+}
+
+.soccer p{
+    font-size: 1.5rem;
+    max-width: 60ch;
+    font-weight: 400;
+    align-self: end;
+}
+.soccer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.soccer h2{
+    font-size: 3rem;
+}
+
+.soccer_text{
+    display:flex;
+    gap: 15rem;
+    align-items: start;
+    height: 12rem;
+}
+
+.soccer_images{
+    display: flex;
+    justify-content: space-between;
+}
+.soccer-soccer_ball{
+    filter: invert(100%);
+    width: 150px;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 2rem;
+    left: 7rem;
+    z-index: -2;
+}
+
+/*-------------------------RAINBOW 6 -------------------------*/
+
+/*----------LAYOUT----------*/
+#rainbow-tag{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 10fr;
+    grid-gap: 3.5rem 1rem;
+    margin-bottom: 5rem;
+}
+
+.sub3{
+    grid-area: 1 / 1;
+}
+.raimbow-characters-sub{
+    grid-area: 2 / 1;
+    font-size: 3rem;
+}
+.rainbow-caveira-img{
+    grid-area: 3 / 1 / 7 / 1;
+}
+.rainbow-caveira-descriptioin{
+    grid-area: 3 / 2/ 7 / 2;
+}
+.rainbow-twitch-img{
+    grid-area: 3 / 3 / 7 /3;
+}
+.rainbow-twitch-description{
+    grid-area: 3 / 4 / 7 / 4;
+}
+
+.rainbow-fuze-img{
+    grid-area: 9 / 2 / 12 / 2;
+}
+
+.rainbow-fuze-description{
+    grid-area: 9 / 3 / 12 / 3;
+}
+/*----------STYLE----------*/
+.sub3{
+    position: relative;
+    top: 5rem;
+}
+
+
+.raimbow-characters-sub a{
+    color: white;
+}
+#rainbow-tag h2 a{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+#rainbow-tag h2 a:hover{
+    color: cornflowerblue;
+    text-decoration: underline cornflowerblue;
+}
+
+#rainbow-tag h2 a:active{
+    color: white;
+    text-decoration: white;
+}
+
+#rainbow-tag p{
+    font-size: 1.2rem;
+}
+#rainbow-tag img{
+    width: 350px;
+    height: auto;
+}
+
+.rainbow-twitch-img h2{
+    position: absolute;
+    z-index:10;
+}
+.caveira-img{
+    height: 350px;
+}
+
+
+/*-------------------------Footer -------------------------*/
+
+footer{
+    margin-top: 20rem;
+    display: flex;
+    justify-content: center;
+}
